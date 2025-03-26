@@ -1,0 +1,219 @@
+/* Allgemeine Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container, .container2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1a163f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1a163f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 20vw;
+    margin-bottom: 20px;
+}
+
+.roomcode-container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(92, 86, 120, 0.26);
+    border: 3px solid #605b7a;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 #d7dfed;
+    padding: 20px;
+    text-align: center;
+}
+
+.infos-container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(92, 86, 120, 0.26);
+    border: 3px solid #605b7a;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 #d7dfed;
+    padding: 20px;
+    text-align: center;
+}
+
+.players-container {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(92, 86, 120, 0.26);
+    border: 3px solid #605b7a;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 #d7dfed;
+    padding: 20px;
+    text-align: center;
+}
+
+.create-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(92, 86, 120, 0.26);
+    border: 3px solid #605b7a;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 #d7dfed;
+    padding: 20px;
+    text-align: center;
+}
+
+.visit-container {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 400px;
+    background: rgba(92, 86, 120, 0.26);
+    border: 3px solid #605b7a;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 #d7dfed;
+    padding: 20px;
+    text-align: center;
+}
+
+.roomcode-container h1, .infos-container h1, .players-container h1, .create-container h1, .visit-container h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.infos-container h2 {
+    color: #bdbdbd;
+    font-size: 1.7rem;
+}
+
+.input-box {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.detail {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+input {
+    background: rgba(155, 150, 177, 0.26);
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 7px;
+    color: #eee;
+}
+
+.button-box {
+    margin-top: 20px;
+}
+
+.button-box2 {
+    margin-top: 20px;
+}
+
+button {
+    background: rgba(150, 168, 177, 0.26);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #eee;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+button#start-btn {
+    background: rgba(37, 255, 48, 0.26);
+    margin-right: 10px;
+}
+
+button#next-btn {
+    background: rgba(255, 215, 40, 0.26);
+    margin-left: 10px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+button.player-box:hover {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+/* Spieler-Liste */
+.players-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 16px;
+    width: 100%;
+    padding: 10px;
+}
+
+.player-box {
+    background: rgba(155, 150, 177, 0.26);
+    color: #eee;
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .logo {
+        width: 75vw;
+    }
+    .roomcode-container {
+        width: 95%;
+    }
+    .infos-container {
+        width: 70%;
+    }
+    .players-container {
+        width: 95%;
+    }
+    .roomcode-container h1 {
+        font-size: 1.5rem;
+    }
+    .infos-container h1 {
+        font-size: 1.2rem;
+    }
+    .infos-container h2 {
+        font-size: 1.0rem;
+    }
+    .players-container h1 {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+    .player-box {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
